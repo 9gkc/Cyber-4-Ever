@@ -1,4 +1,4 @@
-:root { color-scheme: dark; font-family: "Noto Kufi Arabic", "Plus Jakarta Sans", sans-serif; background: #07111c; color: #edf6ff; font-synthesis: none; }
+:root { color-scheme: dark; font-family: "Plus Jakarta Sans", sans-serif; background: #07111c; color: #edf6ff; font-synthesis: none; }
 * { box-sizing: border-box; }
 html, body, #root { min-height: 100%; margin: 0; }
 body { min-width: 320px; background: #07111c; }
@@ -16,7 +16,6 @@ a { color: inherit; text-decoration: none; }
 .nav-item:hover { color: #effaff; background: rgba(100, 158, 187, .09); }
 .nav-item:active, .button:active { transform: scale(.98); }
 .nav-item--active { color: #7ff6e9; background: linear-gradient(90deg, rgba(35, 214, 194, .14), rgba(38, 151, 194, .05)); box-shadow: inset 2px 0 #48dccc; }
-[dir="rtl"] .nav-item--active { box-shadow: inset -2px 0 #48dccc; }
 .nav-arrow { margin-inline-start: auto; }
 .sidebar-foot { margin-top: auto; padding: 18px 9px 0; border-top: 1px solid rgba(154, 187, 206, .1); }
 .privacy-card { display: flex; align-items: center; gap: 9px; color: #7fe9dd; padding-bottom: 16px; }
@@ -39,8 +38,7 @@ a { color: inherit; text-decoration: none; }
 .date-line { display: flex; gap: 8px; align-items: center; color: #a0b6c4; font: 500 11px "IBM Plex Mono", monospace; }
 .pulse-dot { width: 8px; height: 8px; border-radius: 50%; background: #5af0d7; box-shadow: 0 0 0 5px rgba(78, 227, 207, .11); }
 h1, h2, h3, p { margin-top: 0; }
-.hero-copy h1 { font: 700 clamp(28px, 3.6vw, 47px)/1.35 "Noto Kufi Arabic", sans-serif; letter-spacing: -1.4px; max-width: 730px; margin: 18px 0 14px; }
-[dir="ltr"] .hero-copy h1, [dir="ltr"] .page-heading h1 { font-family: "Plus Jakarta Sans", sans-serif; line-height: 1.12; }
+.hero-copy h1 { font: 700 clamp(28px, 3.6vw, 47px)/1.12 "Plus Jakarta Sans", sans-serif; letter-spacing: -1.4px; max-width: 730px; margin: 18px 0 14px; }
 .hero-copy p, .page-heading p { color: #9fb5c4; font-size: 13px; line-height: 2; max-width: 720px; margin-bottom: 22px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 11px; }
 .button { min-height: 42px; border: 0; border-radius: 10px; padding: 0 15px; display: inline-flex; align-items: center; gap: 8px; justify-content: center; font-size: 11px; font-weight: 600; transition: transform .16s ease, background .16s ease, border .16s ease; }

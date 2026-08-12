@@ -1,23 +1,17 @@
-export type Locale = "ar" | "en";
 export type View = "dashboard" | "roadmaps" | "labs" | "planner" | "journal" | "portfolio" | "library" | "ethics";
-
-export type Bilingual = {
-  ar: string;
-  en: string;
-};
 
 export type Module = {
   id: string;
-  title: Bilingual;
+  title: string;
   duration: string;
-  outcome: Bilingual;
+  outcome: string;
 };
 
 export type LearningTrack = {
   id: string;
-  label: Bilingual;
-  description: Bilingual;
-  level: Bilingual;
+  label: string;
+  description: string;
+  level: string;
   accent: string;
   icon: "globe" | "shield" | "database" | "cloud";
   modules: Module[];

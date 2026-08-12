@@ -1,35 +1,39 @@
-# Cyber 4 Ever — سايبر إلى الأبد
+# Cyber 4 Ever
 
-> منصة عربية أولاً تساعد طلاب الأمن السيبراني على التعلم بالترتيب، والتدرب ضمن نطاق مصرح به، وبناء سجل تعلّم وPortfolio صادقين.
+> A privacy-first cybersecurity learning workspace for students who want to learn in sequence, practice only in authorized environments, and build an honest record of their work.
 
 [![Quality](https://github.com/9gkc/Cyber-4-Ever/actions/workflows/quality.yml/badge.svg)](https://github.com/9gkc/Cyber-4-Ever/actions/workflows/quality.yml)
 [![Deploy](https://github.com/9gkc/Cyber-4-Ever/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/9gkc/Cyber-4-Ever/actions/workflows/deploy-pages.yml)
 
-**Cyber 4 Ever** تعني *سايبر إلى الأبد*. المنصة ليست أداة فحص ولا تجمع أهدافاً ولا تقدم محاكاة تستهدف أنظمة حقيقية. بدلاً من ذلك، تجمع مسارات تعلم عملية، مراجع لمختبرات مخصصة للتدريب، مخطط جلسات خاص، دفتر مختبر محلي، وPortfolio مبنياً على الأدلة.
+## Live platform
 
-## ما الذي تقدمه المنصة؟
+**Open Cyber 4 Ever:** [https://9gkc.github.io/Cyber-4-Ever/](https://9gkc.github.io/Cyber-4-Ever/)
 
-| المجال | ما يحصل عليه الطالب | حد الأمان |
-| --- | --- | --- |
-| مسارات التعلم | أربع مسارات مرتبة: أمن الويب، SOC، التحليل الجنائي، وأمن السحابة. | تركيز على المفاهيم والضوابط الدفاعية. |
-| المختبرات الآمنة | روابط مرجعية لبيئات تعليمية مخصصة مثل OWASP Juice Shop وWeb Security Academy. | لا روابط لأهداف حقيقية، ولا فحص من داخل التطبيق. |
-| مخطط الدراسة | جلسات يومية محددة المدة وتقدم محلي محفوظ في المتصفح. | لا حسابات ولا تحليلات مستخدم. |
-| دفتر المختبر | ملاحظات منظمة مع تصدير واستيراد JSON. | تحذير دائم من حفظ الأسرار أو البيانات الحساسة. |
-| Portfolio الطالب | عرض مشروعات وشهادات وإنجازات مختبر مع روابط دليل HTTPS اختيارية. | لا تمنح المنصة اعتماداً ولا توثق هوية المستخدم تلقائياً. |
+Cyber 4 Ever is not a scanner, does not collect targets, and does not simulate attacks against real systems. It brings together role-oriented learning paths, references to purpose-built training labs, a private study planner, a local lab journal, and an evidence-aware student portfolio.
 
-## مبادئ التصميم
+## What students can do
 
-**Arabic-first.** تبدأ التجربة باللغة العربية مع دعم إنجليزي فعلي وزر تبديل فوري واتجاه RTL سليم.
+| Area | Student capability | Safety boundary |
+| :--- | :--- | :--- |
+| **Learning roadmaps** | Follow four ordered paths: Web Application Security, SOC Operations, Digital Forensics, and Cloud Security. | Focused on concepts and defensive controls. |
+| **Safe labs** | Visit official references for purpose-built environments such as OWASP Juice Shop and Web Security Academy. | No real targets and no in-app scanning. |
+| **Study planner** | Create time-bounded daily sessions and record progress locally in the browser. | No accounts and no user analytics. |
+| **Lab journal** | Keep structured notes with JSON export and import. | Persistent reminders not to store secrets or sensitive data. |
+| **Student portfolio** | Present projects, certificates, and lab milestones with optional HTTPS evidence links. | No credentials are issued and identity is not verified automatically. |
 
-**Privacy-first.** لا توجد قاعدة بيانات ولا تسجيل دخول ولا SDK تحليلات. تُخزن قوائم الإنجاز والمخطط والدفتر والـPortfolio في `localStorage` ضمن متصفح المستخدم. يمكن تصدير السجل في أي وقت أو مسحه عبر بيانات الموقع في المتصفح.
+## Design principles
 
-**Evidence, not claims.** لا تعرض المنصة مديحاً ذاتياً أو شهادات مزيفة. عند اختيار وسم «مدعوم بدليل»، تُلزم الواجهة المستخدم بتقديم رابط HTTPS للمراجعة؛ ويبقى الحكم على الدليل بيد من يراجعه.
+**English-first.** The repository, interface, and documentation are written in clear professional English.
 
-**Authorized practice only.** القاعدة الأساسية هي: *إذا لم يكن لديك إذن صريح ومحدد، لا تختبر*. اقرأ [سياسة الاستخدام المسؤول](docs/responsible-practice.md) قبل استخدام أي مرجع مختبر.
+**Privacy-first.** There is no database, sign-in, or analytics SDK. Completion records, planned sessions, journal entries, and portfolio items are stored in the user’s own browser with `localStorage`. Users can export their data at any time or clear it through browser site data controls.
 
-## التشغيل محلياً
+**Evidence, not claims.** The platform does not fabricate achievements, praise, or certificates. When a learner marks an item as evidence-linked, the interface requires a reviewable HTTPS URL. The reviewer remains responsible for evaluating that evidence.
 
-يتطلب المشروع Node.js 22+ وpnpm.
+**Authorized practice only.** The platform rule is simple: *if you do not have explicit, specific authorization, do not test.* Read the [Responsible Practice Policy](docs/responsible-practice.md) before using any lab reference.
+
+## Run locally
+
+The project requires Node.js 22+ and pnpm.
 
 ```bash
 git clone https://github.com/9gkc/Cyber-4-Ever.git
@@ -38,25 +42,25 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-| الأمر | الغرض |
-| --- | --- |
-| `pnpm dev` | تشغيل بيئة التطوير المحلية. |
-| `pnpm test` | تشغيل اختبارات Vitest لمنطق التقدم والتحقق من الروابط. |
-| `pnpm lint` | فحص أنواع TypeScript دون إخراج. |
-| `pnpm build` | بناء النسخة الثابتة للإنتاج داخل `dist/`. |
+| Command | Purpose |
+| :--- | :--- |
+| `pnpm dev` | Start the local development environment. |
+| `pnpm test` | Run Vitest checks for progress, storage, and URL-validation logic. |
+| `pnpm lint` | Type-check TypeScript without emitting output. |
+| `pnpm build` | Produce the static production build in `dist/`. |
 
-## التحقق والجودة
+## Quality and deployment
 
-تغطي اختبارات Vitest منطق احتساب تقدم المسارات، وعدّ دقائق الدراسة المكتملة، والتحقق من روابط دليل الـPortfolio عبر HTTPS، والسماح بروابط المختبرات التعليمية الموثوقة فقط. ينفذ GitHub Actions الاختبارات والبناء على كل push وpull request، وينشر GitHub Pages من الفرع الافتراضي عند نجاح البناء.
+The Vitest suite covers learning-progress calculations, completed study-time aggregation, HTTPS-only portfolio evidence, and allowlisted training-resource URLs. GitHub Actions runs tests and the production build on every push and pull request. A successful default-branch build deploys the static application to GitHub Pages.
 
-## المصادر والمراجع
+## Curriculum sources
 
-ينظم المحتوى التعليمي وفق أدوار ومهارات NICE، ويشير إلى إرشادات OWASP وبيئات تدريب معتمدة من مقدميها. راجع [سجل المصادر](docs/sources.md) للتفاصيل والروابط الأصلية.
+The learning content is structured around NICE work roles and skills, with references to OWASP guidance and official training environments. See [the source record](docs/sources.md) for details and direct references.
 
-## المساهمة والإبلاغ عن مشكلات أمنية
+## Contributing and security
 
-اقرأ [CONTRIBUTING.md](CONTRIBUTING.md) قبل المساهمة. لا تفتح issue عاماً لتفاصيل مشكلة أمنية محتملة؛ اتبع [SECURITY.md](SECURITY.md) للإبلاغ المسؤول.
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before contributing. Do not open a public issue containing potential security-vulnerability details; follow [SECURITY.md](SECURITY.md) for responsible reporting.
 
-## الترخيص
+## License
 
-هذا المشروع مرخص بموجب [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).

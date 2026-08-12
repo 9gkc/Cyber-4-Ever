@@ -4,7 +4,7 @@ Thank you for improving a learning resource for cybersecurity students. Contribu
 
 ## Development checks
 
-Install dependencies with `pnpm install --frozen-lockfile`, then run `pnpm test` and `pnpm build` before proposing a change. Keep copy clear in Arabic and English when a user-facing string is changed. Arabic must remain readable in RTL layouts and English URLs/code identifiers should retain their natural left-to-right direction.
+Install dependencies with `pnpm install --frozen-lockfile`, then run `pnpm test` and `pnpm build` before proposing a change. Keep every user-facing string clear, concise, and professional in English. URLs and code identifiers should retain their natural left-to-right direction.
 
 ## Content standards
 
