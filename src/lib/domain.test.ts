@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
-import { tracks } from "../data";
+import { safeLabs, tracks } from "../data";
+import { lessons } from "../lessonContent";
 import {
   completedStudyMinutes,
   isApprovedTrainingUrl,
@@ -62,5 +63,30 @@ describe("training destination safeguards", () => {
     expect(isApprovedTrainingUrl("https://owasp.org.attacker.example/lab")).toBe(false);
     expect(isApprovedTrainingUrl("http://owasp.org/www-project-juice-shop/")).toBe(false);
     expect(isApprovedTrainingUrl("https://example.com/training")).toBe(false);
+  });
+});
+
+describe("curriculum completeness", () => {
+  it("provides a complete, reference-backed lesson for every roadmap module", () => {
+    const modules = tracks.flatMap((track) => track.modules);
+
+    expect(Object.keys(lessons)).toHaveLength(modules.length);
+    for (const module of modules) {
+      const lesson = lessons[module.id];
+      expect(lesson.overview.length).toBeGreaterThan(80);
+      expect(lesson.objectives).toHaveLength(3);
+      expect(lesson.concepts.length).toBeGreaterThanOrEqual(2);
+      expect(lesson.safePractice.steps.length).toBeGreaterThanOrEqual(3);
+      expect(lesson.review.answer.length).toBeGreaterThan(40);
+      expect(lesson.references.length).toBeGreaterThanOrEqual(1);
+      expect(lesson.references.every((reference) => reference.url.startsWith("https://"))).toBe(true);
+      expect(lesson.boundaries.length).toBeGreaterThan(40);
+    }
+  });
+
+  it("lists multiple approved training resources with suitability guidance", () => {
+    expect(safeLabs.length).toBeGreaterThanOrEqual(9);
+    expect(safeLabs.every((lab) => isApprovedTrainingUrl(lab.url))).toBe(true);
+    expect(safeLabs.every((lab) => lab.fit.length > 20)).toBe(true);
   });
 });

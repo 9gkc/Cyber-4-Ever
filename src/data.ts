@@ -68,8 +68,13 @@ export const conceptCards = [
 ];
 
 export const safeLabs = [
-  { name: "OWASP Juice Shop", url: "https://owasp.org/www-project-juice-shop/", description: "An intentionally vulnerable application for training and awareness only.", tag: "WEB" },
-  { name: "PortSwigger Web Security Academy", url: "https://portswigger.net/web-security", description: "Browser-based labs designed for authorized web-security learning.", tag: "WEB" },
-  { name: "TryHackMe", url: "https://tryhackme.com/", description: "Guided learning rooms; choose educational paths and follow each room's rules.", tag: "GUIDED" },
-  { name: "Hack The Box Academy", url: "https://academy.hackthebox.com/", description: "Structured modules for theoretical and practical foundations in a lab context.", tag: "GUIDED" },
+  { name: "OWASP Juice Shop", url: "https://owasp.org/www-project-juice-shop/", description: "Intentionally vulnerable application for web-security awareness and training.", tag: "WEB", fit: "Start with HTTP, authentication, and OWASP risk concepts." },
+  { name: "OWASP WebGoat", url: "https://owasp.org/www-project-webgoat/", description: "Guided lessons that explain a weakness and its defensive mitigation in an isolated teaching application.", tag: "WEB", fit: "Use for structured web-security lessons and mitigation discussion." },
+  { name: "PortSwigger Web Security Academy", url: "https://portswigger.net/web-security", description: "Browser-based labs designed for authorized web-security learning.", tag: "WEB", fit: "Use after foundations to reinforce focused application-security topics." },
+  { name: "TryHackMe", url: "https://tryhackme.com/", description: "Guided learning rooms; select educational paths and follow each room's rules.", tag: "GUIDED", fit: "Use for paced, beginner-friendly cross-domain practice." },
+  { name: "Hack The Box Academy", url: "https://academy.hackthebox.com/", description: "Structured modules for theoretical and practical foundations in a lab context.", tag: "GUIDED", fit: "Use for progression plans with provider-defined objectives." },
+  { name: "pwn.college", url: "https://pwn.college/", description: "University-maintained hands-on cybersecurity education platform with learner rules.", tag: "FOUNDATIONS", fit: "Use for core computing and challenge-based learning; respect solution-sharing rules." },
+  { name: "CyberDefenders", url: "https://cyberdefenders.org/blue-team-labs/", description: "Browser-accessible blue-team scenarios for DFIR, threat hunting, and security operations practice.", tag: "SOC / DFIR", fit: "Use supplied artifacts to practice triage, timelines, and evidence notes." },
+  { name: "Microsoft Learn Security", url: "https://learn.microsoft.com/en-us/security/", description: "Vendor-authored security learning paths, practice modules, and selected sandboxes.", tag: "CLOUD", fit: "Use for Microsoft security, identity, and cloud concepts in vendor-provided contexts." },
+  { name: "AWS Skill Builder", url: "https://aws.amazon.com/training/digital/immersive-learning/", description: "Guided experiences and safe AWS Console learning environments; availability can vary by account and course.", tag: "CLOUD", fit: "Use for cloud architecture and configuration practice after reviewing cost and access terms." },
 ];

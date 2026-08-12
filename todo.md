@@ -15,3 +15,8 @@
 - [x] Verify and prominently place the direct live-platform URL across Cyber 4 Ever repository documentation and interface.
 - [x] Conduct a line-by-line editorial review of the 9gkc profile README, including project names, descriptions, links, and table structure.
 - [x] Run production validation, test external links, and push the reviewed changes directly to both default branches.
+- [x] Research and map authoritative learning references for Web Security, SOC, Digital Forensics, and Cloud Security lessons.
+- [x] Create detailed lesson content for every roadmap module, including objectives, explanation, defensive practice, review questions, and official references.
+- [x] Build an interactive lesson-detail experience that learners open before marking a module complete.
+- [x] Expand Safe Labs with additional allowlisted, official, purpose-built training resources and clear suitability guidance.
+- [x] Add unit tests for lesson completeness, approved learning resources, and completion flow; validate and publish the curriculum update.

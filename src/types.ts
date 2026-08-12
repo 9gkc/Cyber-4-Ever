@@ -7,6 +7,21 @@ export type Module = {
   outcome: string;
 };
 
+export type LessonReference = {
+  label: string;
+  url: string;
+};
+
+export type Lesson = {
+  overview: string;
+  objectives: string[];
+  concepts: Array<{ title: string; body: string }>;
+  safePractice: { title: string; steps: string[] };
+  review: { prompt: string; answer: string };
+  boundaries: string;
+  references: LessonReference[];
+};
+
 export type LearningTrack = {
   id: string;
   label: string;

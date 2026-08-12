@@ -14,6 +14,16 @@ The local-completion control for the first Web Application Security module was t
 
 The Portfolio view was reviewed. It clearly states that the page displays evidence rather than unsupported claims, explains the HTTPS evidence requirement for the evidence-linked label, and states that it does not issue certificates or verify identity. Submitting the empty form triggers the browser’s required-field validation, preventing a blank achievement from being saved.
 
+## Curriculum expansion verification
+
+The Roadmaps page now opens a detailed lesson panel before completion can be recorded. The verified lesson included stated objectives, two core concepts, a bounded safe-practice activity, a review prompt with explanation, authorization limits, and official references.
+
+Completion was verified from the in-lesson button only: the selected Web Security lesson moved the track from 0% to 20%, and then returned to 0% when the state was reset.
+
+Safe Labs displays nine approved learning resources with a visible “Best fit” description for each. The verified categories cover web application security, guided foundations, SOC/DFIR, and cloud security.
+
+The expanded curriculum passed all ten Vitest assertions and completed a production build successfully. Twenty-eight official learning and lab links were checked; the accessible destinations responded successfully, while selected providers returned anti-automation responses during command-line validation. Those providers had already been reviewed from their official pages during curriculum research and remain linked only as their official destinations.
+
 ## Published deployment
 
 GitHub Pages was enabled with the GitHub Actions source and the deployment workflow subsequently completed successfully. The published application was opened and verified at **https://9gkc.github.io/Cyber-4-Ever/**. The live page served the dashboard, visible navigation, privacy statement, learning statistics, roadmap cards, and responsible-practice notice.

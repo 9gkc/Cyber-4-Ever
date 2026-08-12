@@ -37,6 +37,10 @@ export function isApprovedTrainingUrl(value: string) {
       "portswigger.net",
       "tryhackme.com",
       "academy.hackthebox.com",
+      "pwn.college",
+      "cyberdefenders.org",
+      "learn.microsoft.com",
+      "aws.amazon.com",
     ]);
     return url.protocol === "https:" && approvedHosts.has(url.hostname);
   } catch {
