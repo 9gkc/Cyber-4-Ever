@@ -1,5 +1,7 @@
 # Cyber 4 Ever
 
+![Cyber 4 Ever — Learn, Practice, Secure](docs/assets/cyber4ever-social-preview.jpg)
+
 > A privacy-first cybersecurity learning workspace for students who want to learn in sequence, practice only in authorized environments, and build an honest record of their work.
 
 [![Quality](https://github.com/9gkc/Cyber-4-Ever/actions/workflows/quality.yml/badge.svg)](https://github.com/9gkc/Cyber-4-Ever/actions/workflows/quality.yml)

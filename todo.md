@@ -24,3 +24,7 @@
 - [x] Add a persistent Arabic/English language switcher that changes the document direction and interface layout between RTL and LTR.
 - [x] Preserve the English repository documentation, public-source links, and local learning data while presenting Arabic inside the site.
 - [x] Test both language experiences, validate production output, and publish the bilingual interface update.
+- [x] Enhance the provided Cyber 4 Ever visual for professional social-sharing use while preserving its existing identity and composition.
+- [x] Add the finalized sharing image as a repository asset and configure Open Graph and Twitter metadata in the live site.
+- [x] Add a visible project-cover section to the repository README and set the repository social-preview image.
+- [ ] Validate the image asset, production build, and published metadata before pushing the social-preview update.
