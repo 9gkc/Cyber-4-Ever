@@ -22,7 +22,7 @@ Completion was verified from the in-lesson button only: the selected Web Securit
 
 Safe Labs displays nine approved learning resources with a visible “Best fit” description for each. The verified categories cover web application security, guided foundations, SOC/DFIR, and cloud security.
 
-The expanded curriculum passed all ten Vitest assertions and completed a production build successfully. Twenty-eight official learning and lab links were checked; the accessible destinations responded successfully, while selected providers returned anti-automation responses during command-line validation. Those providers had already been reviewed from their official pages during curriculum research and remain linked only as their official destinations.
+The expanded curriculum passed all ten Vitest assertions and completed a production build successfully. Twenty-seven official learning and lab links were checked; the accessible destinations responded successfully, while selected providers returned anti-automation responses during command-line validation. Those providers had already been reviewed from their official pages during curriculum research and remain linked only as their official destinations.
 
 ## Published deployment
 
