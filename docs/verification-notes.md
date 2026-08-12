@@ -31,3 +31,5 @@ The Arabic interface was reviewed locally with RTL navigation, Arabic dashboard 
 ## Published deployment
 
 GitHub Pages was enabled with the GitHub Actions source and the deployment workflow subsequently completed successfully. The published application was opened and verified at **https://9gkc.github.io/Cyber-4-Ever/**. The live page served the dashboard, visible navigation, privacy statement, learning statistics, roadmap cards, and responsible-practice notice.
+
+After the bilingual deployment, the live page was reopened at the same URL and confirmed to load Arabic content by default with RTL navigation and a visible English-language switch.
