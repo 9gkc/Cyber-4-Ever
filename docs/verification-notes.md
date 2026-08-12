@@ -13,3 +13,7 @@ The subsequent browser review confirmed that the Arabic right-to-left dashboard 
 The local-completion control for the first Web Application Security module was toggled in the browser. The track and progress-ring indicators updated from 0% to 20%, then returned to 0% when toggled back. The browser’s temporary local state was therefore left clean after this verification.
 
 The Portfolio view was reviewed in Arabic RTL mode. It clearly states that the page displays evidence rather than unsupported claims, explains the HTTPS evidence condition for the visible «مدعوم بدليل» label, and states that it does not issue certificates or verify identity. Submitting the empty form triggers the browser’s required-field validation, preventing a blank achievement from being saved.
+
+## Published deployment
+
+GitHub Pages was enabled with the GitHub Actions source and the deployment workflow subsequently completed successfully. The published application was opened and verified at **https://9gkc.github.io/Cyber-4-Ever/**. The live page served the Arabic dashboard, visible navigation, privacy statement, learning statistics, route cards, and responsible-practice notice.
