@@ -20,3 +20,7 @@
 - [x] Build an interactive lesson-detail experience that learners open before marking a module complete.
 - [x] Expand Safe Labs with additional allowlisted, official, purpose-built training resources and clear suitability guidance.
 - [x] Add unit tests for lesson completeness, approved learning resources, and completion flow; validate and publish the curriculum update.
+- [x] Add Arabic translations for all learner-facing navigation, dashboard, roadmap, lesson, Safe Labs, planner, journal, portfolio, concept, and practice content.
+- [x] Add a persistent Arabic/English language switcher that changes the document direction and interface layout between RTL and LTR.
+- [x] Preserve the English repository documentation, public-source links, and local learning data while presenting Arabic inside the site.
+- [x] Test both language experiences, validate production output, and publish the bilingual interface update.

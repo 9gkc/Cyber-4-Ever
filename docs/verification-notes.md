@@ -24,6 +24,10 @@ Safe Labs displays nine approved learning resources with a visible â€œBest fitâ€
 
 The expanded curriculum passed all ten Vitest assertions and completed a production build successfully. Twenty-seven official learning and lab links were checked; the accessible destinations responded successfully, while selected providers returned anti-automation responses during command-line validation. Those providers had already been reviewed from their official pages during curriculum research and remain linked only as their official destinations.
 
+## Bilingual interface verification
+
+The Arabic interface was reviewed locally with RTL navigation, Arabic dashboard and learning content, Arabic-localized dates, and the Arabic typeface applied. Selecting the visible language switch returned the same view to English and restored the LTR layout successfully. The English choice remained active after a browser reload, confirming local preference persistence.
+
 ## Published deployment
 
 GitHub Pages was enabled with the GitHub Actions source and the deployment workflow subsequently completed successfully. The published application was opened and verified at **https://9gkc.github.io/Cyber-4-Ever/**. The live page served the dashboard, visible navigation, privacy statement, learning statistics, roadmap cards, and responsible-practice notice.
