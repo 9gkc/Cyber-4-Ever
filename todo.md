@@ -27,4 +27,4 @@
 - [x] Enhance the provided Cyber 4 Ever visual for professional social-sharing use while preserving its existing identity and composition.
 - [x] Add the finalized sharing image as a repository asset and configure Open Graph and Twitter metadata in the live site.
 - [x] Add a visible project-cover section to the repository README and set the repository social-preview image.
-- [ ] Validate the image asset, production build, and published metadata before pushing the social-preview update.
+- [x] Validate the image asset, production build, and published metadata before pushing the social-preview update.
