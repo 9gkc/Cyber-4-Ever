@@ -13,6 +13,12 @@
 
 Cyber 4 Ever is not a scanner, does not collect targets, and does not simulate attacks against real systems. It brings together role-oriented learning paths, references to purpose-built training labs, a private study planner, a local lab journal, and an evidence-aware student portfolio.
 
+## Interface preview
+
+![Cyber 4 Ever Arabic RTL dashboard showing private local learning progress, four active defensive tracks, and a Web Application Security lesson card](docs/images/cyber4ever-dashboard-ar.webp)
+
+This is a capture of the live Arabic interface. **[Open the interactive workspace](https://9gkc.github.io/Cyber-4-Ever/)** to switch languages, review the safe-lab boundaries, and follow the structured curriculum locally in the browser.
+
 ## What students can do
 
 | Area | Student capability | Safety boundary |
